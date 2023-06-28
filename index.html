@@ -4,66 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mock Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <div id="sign-up-container">
         <!-- email, zip code, password and password confirmation -->
-        <h1>Sign Up!</h1>
-        <p>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            inputmode="email"
-            id="email"
-            enterkeyhint="next"
-            autocomplete="off"
-            required
-            placeholder="Enter your email address"
-          />
+        <h1>Sign Up</h1>
+        <form>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              inputmode="email"
+              id="email"
+              enterkeyhint="next"
+              autocomplete="off"
+              required
+              placeholder="Enter your email address"
+            />
+          </p>
 
           <span class="instructions"><span class="error-msg"></span></span>
-        </p>
-        <p>
-          <label for="postcode">Postcode</label>
-          <input
-            type="text"
-            inputmode="text"
-            id="postcode"
-            enterkeyhint="next"
-            autocomplete="off"
-            required
-            placeholder="Your postcode"
-          />
+          <p>
+            <label for="postcode">Postcode</label>
+            <input
+              type="text"
+              inputmode="text"
+              id="postcode"
+              enterkeyhint="next"
+              autocomplete="off"
+              required
+              placeholder="Your postcode"
+            />
+          </p>
           <span class="instructions"><span class="error-msg"></span></span>
-        </p>
-        <p>
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="pass"
-            name="pass"
-            enterkeyhint="send"
-            autocomplete="off"
-            maxlength="32"
-            minlength="8"
-            required
-          />
+          <p>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="pass"
+              name="pass"
+              enterkeyhint="send"
+              autocomplete="off"
+              maxlength="32"
+              minlength="8"
+              required
+            />
+          </p>
           <span class="instructions"><span class="error-msg"></span></span>
-        </p>
-        <p>
-          <label for="password-confirmation">Confirm password</label>
-          <input
-            type="password"
-            id="pass-confirm"
-            enterkeyhint="send"
-            autocomplete="off"
-            maxlength="32"
-            minlength="8"
-            required
-          />
-          <span class="instructions"><span class="error-msg"></span></span>
-        </p>
+          <p>
+            <label for="password-confirmation">Confirm password</label>
+            <input
+              type="password"
+              id="pass-confirm"
+              enterkeyhint="send"
+              autocomplete="off"
+              maxlength="32"
+              minlength="8"
+              required
+            />
+            <span class="instructions"><span class="error-msg"></span></span>
+          </p>
+        </form>
+        <button class="submit">Create Account</button>
       </div>
     </main>
   </body>
