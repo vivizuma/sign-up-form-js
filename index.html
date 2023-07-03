@@ -24,9 +24,15 @@
       <div id="sign-up-container">
         <!-- email, zip code, password and password confirmation -->
         <h1>Sign Up</h1>
-        <form name="fakeForm" id="fakeForm" action="#" method="POST" autocomplete="off">
+        <form
+          name="fakeForm"
+          id="fakeForm"
+          action="#"
+          method="POST"
+          autocomplete="off"
+        >
           <p>
-            <label for="email">Email</label>
+            <label for="email">Email*</label>
             <input
               type="email"
               inputmode="email"
@@ -37,44 +43,48 @@
               placeholder="Enter your email address"
             />
           </p>
+          <div class="instructions"><span class="error-msg"></span></div>
 
-          <span class="instructions"><span class="error-msg"></span></span>
           <p>
-            <label for="postcode">Postcode</label>
+            <label for="postcode">UK Postcode*</label>
             <input
               type="text"
               inputmode="text"
               id="postcode"
               enterkeyhint="next"
               autocomplete="off"
+              minlength="6"
+              maxlength="6"
               required
               placeholder="Your postcode"
             />
           </p>
-          <span class="instructions"><span class="error-msg"></span></span>
+          <div class="instructions"><span class="error-msg"></span></div>
           <p>
-            <label for="pass">Password</label>
+            <label for="pass">Password*</label>
             <input
               type="password"
-              id="pass"
+              id="password"
               name="pass"
               enterkeyhint="send"
               autocomplete="off"
               maxlength="32"
               minlength="8"
+              placeholder="8-32 characters"
               required
             />
           </p>
-          <span class="instructions"><span class="error-msg"></span></span>
+          <div class="instructions"><span class="error-msg"></span></div>
           <p>
-            <label for="pass-confirm">Confirm password</label>
+            <label for="pass-confirm">Confirm password*</label>
             <input
               type="password"
-              id="pass-confirm"
+              id="password-confirm"
               enterkeyhint="send"
               autocomplete="off"
               maxlength="32"
               minlength="8"
+              
               required
             />
             <span class="instructions"><span class="error-msg"></span></span>
